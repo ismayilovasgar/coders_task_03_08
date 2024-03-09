@@ -243,6 +243,15 @@
 
 .section-footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 200px;
+  
+}
+
+.section-footer-about {
+  width: 40%;
+}
+.section-footer .section-footer-image {
+  width: 40%;
 }
