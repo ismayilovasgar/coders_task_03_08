@@ -10,6 +10,9 @@
 
 :root {
   --text-shdow: 2px 0px 10px rgb(236, 229, 229);
+  --color-default: #434240;
+  --color-bg: #e2cba9;
+  --text-a-links: 0px 4px 15px black;
 }
 
 /** Header - page */
@@ -26,6 +29,7 @@
   width: 100%;
   z-index: 2;
 }
+
 .navbar img {
   width: 100%;
   height: 100%;
@@ -39,6 +43,7 @@
   position: relative;
   cursor: pointer;
 }
+
 .navbar .nav-logo-left p {
   font-family: "Oleo Script", system-ui;
   color: rgb(224, 203, 171);
@@ -47,6 +52,7 @@
   bottom: 5px;
   text-shadow: 0px 4px 15px black;
 }
+
 .navbar .nav-logo-left p:hover {
   text-shadow: var(--text-shdow);
 }
@@ -63,20 +69,22 @@
 
 .navbar .nav-logo-right .content {
   width: 100%;
-  background-color: #e2cba9;
+  background-color: var(--color-bg);
   padding: 10px;
   border-radius: 100%;
 }
+
 .navbar .nav-logo-right .content i {
-  color: #434240;
+  color: var(--color-default);
   font-size: 30px;
 }
 
 .navbar .nav-logo-right .content:hover i {
-  color: #e9e5e0;
+  color: var(--color-bg);
 }
+
 .navbar .nav-logo-right .content:hover {
-  background-color: #373f4b;
+  background-color: var(--color-default);
   cursor: pointer;
 }
 
@@ -105,7 +113,7 @@
   font-size: 28px;
   color: #e0ccab;
   font-family: "Dancing Script", cursive;
-  text-shadow: 0px 4px 15px black;
+  text-shadow: var(--text-a-links);
 }
 
 .nav-links ul li a:hover {
@@ -151,6 +159,7 @@
   font-family: "Oleo Script", system-ui;
   text-shadow: 0px 2px 5px black;
 }
+
 .products-container > p {
   width: 60%;
   margin: 20px auto 10px;
@@ -258,9 +267,10 @@
   padding: 10px;
   margin: 20px auto;
   font-size: 40px;
-  color: #dfccab;
+  color: #ddc396;
   font-family: "Oleo Script", system-ui;
   letter-spacing: 5px;
+  z-index: 2;
 }
 
 .section-middle p {
@@ -268,7 +278,7 @@
   font-family: "Oleo Script", system-ui;
   padding: 20px 60px;
   font-size: 30px;
-  text-shadow: 2px 2px 2px rgb(137, 115, 88);
+  text-shadow: 2px 2px 2px rgb(201, 130, 59);
 }
 
 .section-middle-bg {
@@ -301,6 +311,7 @@
   width: 48%;
   height: 507px;
 }
+
 .section-footer-about h2 {
   font-family: "Oleo Script", system-ui;
   font-size: 52px;
@@ -366,4 +377,5 @@
 
 .section-footer .section-footer-image i:hover {
   text-shadow: var(--text-shdow);
+  cursor: pointer;
 }
