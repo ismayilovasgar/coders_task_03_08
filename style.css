@@ -8,6 +8,11 @@
   list-style-type: none;
 }
 
+:root {
+  --text-shdow: 2px 0px 10px rgb(236, 229, 229);
+}
+
+/** Header - page */
 .navbar {
   position: fixed;
   top: 0px;
@@ -32,6 +37,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 .navbar .nav-logo-left p {
   font-family: "Oleo Script", system-ui;
@@ -40,6 +46,9 @@
   position: absolute;
   bottom: 5px;
   text-shadow: 0px 4px 15px black;
+}
+.navbar .nav-logo-left p:hover {
+  text-shadow: var(--text-shdow);
 }
 
 .navbar .nav-logo-right {
@@ -57,6 +66,18 @@
   background-color: #e2cba9;
   padding: 10px;
   border-radius: 100%;
+}
+.navbar .nav-logo-right .content i {
+  color: #434240;
+  font-size: 30px;
+}
+
+.navbar .nav-logo-right .content:hover i {
+  color: #e9e5e0;
+}
+.navbar .nav-logo-right .content:hover {
+  background-color: #373f4b;
+  cursor: pointer;
 }
 
 .navbar .nav-logo-right img {
@@ -87,7 +108,7 @@
   text-shadow: 0px 4px 15px black;
 }
 
-.nav-links ul li a:hover{
+.nav-links ul li a:hover {
   text-shadow: 2px 0px 10px rgb(236, 229, 229);
 }
 
@@ -115,6 +136,8 @@
     rgba(1, 1, 1, 0.6699929971988796) 100%
   );
 }
+
+/** Products - page */
 .products-container {
   margin: 0 auto;
   width: 90%;
@@ -214,6 +237,7 @@
   color: #383735;
 }
 
+/** Section-middle */
 .section-middle {
   background-image: url("https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
@@ -261,6 +285,7 @@
   );
 }
 
+/** Section - footer */
 .section-footer {
   display: flex;
   justify-content: space-between;
@@ -339,6 +364,6 @@
   right: 20px;
 }
 
-.section-footer .section-footer-image i:hover{
-  text-shadow: 2px 0px 10px rgb(236, 229, 229);
+.section-footer .section-footer-image i:hover {
+  text-shadow: var(--text-shdow);
 }
